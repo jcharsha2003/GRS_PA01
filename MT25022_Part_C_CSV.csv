@@ -1,0 +1,7 @@
+Program+Function,CPU%,Mem,IO
+A+cpu,0,0,0.00
+A+mem,0,0,0.22
+A+io,0,0,191.45
+B+cpu,0,0,0.00
+B+mem,80.00,0,0.45
+B+io,0,0,191.45

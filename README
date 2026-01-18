@@ -1,0 +1,57 @@
+Roll Number: MT25022
+
+# GRS_PA01: Processes and Threads Assignment
+
+This repository contains the implementation for Graduate Systems (CSE638) PA01: Processes and Threads.
+
+## Overview
+
+The assignment consists of four parts:
+
+- **Part A**: Two C programs - one creating processes using fork(), another creating threads using pthreads.
+- **Part B**: Three worker functions (cpu, mem, io) that perform intensive computations.
+- **Part C**: Bash script to automate measurement of system metrics (CPU%, Memory, I/O) for all combinations.
+- **Part D**: Extension of Part C to vary the number of processes/threads and generate plots.
+
+## Files
+
+- `MT25022_Part_A_Program_A.c`: Program A (processes)
+- `MT25022_Part_A_Program_B.c`: Program B (threads)
+- `MT25022_Part_B_workers.h`: Header with worker functions
+- `MT25022_Part_C_shell.sh`: Bash script for automation
+- `MT25022_Part_C_CSV.csv`: CSV with measurements for Part C
+- `MT25022_Part_D_CSV.csv`: CSV with measurements for Part D
+- `MT25022_Part_D_plot.py`: Python script for plotting
+- `MT25022_Report.pdf`: Report with analysis
+- `Makefile`: For compilation
+- `README`: This file
+
+## Usage
+
+1. Compile the programs:
+   ```
+   make
+   ```
+
+2. Run Part C script:
+   ```
+   ./MT25022_Part_C_shell.sh
+   ```
+
+3. Generate plots for Part D:
+   ```
+   python3 MT25022_Part_D_plot.py
+   ```
+
+4. Clean binaries:
+   ```
+   make clean
+   ```
+
+## AI Usage Declaration
+
+The code in this assignment was generated with assistance from GitHub Copilot. All components involving AI-generated code are declared in the comments within the files.
+
+## GitHub Repository
+
+[Link to repository]
