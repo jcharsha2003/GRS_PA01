@@ -9,10 +9,10 @@ PTHREAD_CFLAGS = -pthread
 all: progA progB
 
 progA: MT25022_Part_A_Program_A.c MT25022_Part_B_workers.h
-	$(CC) $(CFLAGS) -o progA MT25022_Part_A_Program_A.c
+	$(CC) -o progA MT25022_Part_A_Program_A.c $(CFLAGS)
 
 progB: MT25022_Part_A_Program_B.c MT25022_Part_B_workers.h
-	$(CC) $(PTHREAD_CFLAGS) $(CFLAGS) -o progB MT25022_Part_A_Program_B.c
+	$(CC) $(PTHREAD_CFLAGS) -o progB MT25022_Part_A_Program_B.c $(CFLAGS)
 
 clean:
 	rm -f progA progB

@@ -36,7 +36,11 @@ int main(int argc, char *argv[]) {
     if(argc >= 3) {
         num_threads = atoi(argv[2]);
     }
-    pthread_t threads[8]; // Max 8
+    pthread_t *threads = malloc(num_threads * sizeof(pthread_t));
+    if (threads == NULL) {
+        perror("malloc failed");
+        return 1;
+    }
     // Create N threads using pthread_create
     for(int i = 0; i < num_threads; i++) {
         if(pthread_create(&threads[i], NULL, worker, argv[1]) != 0) {
@@ -48,6 +52,7 @@ int main(int argc, char *argv[]) {
     for(int i = 0; i < num_threads; i++) {
         pthread_join(threads[i], NULL);
     }
+    free(threads);
     printf("Main thread done\n");
     return 0;
 }
