@@ -22,7 +22,7 @@ The assignment consists of four parts:
 - `MT25022_Part_C_CSV.csv`: CSV with measurements for Part C
 - `MT25022_Part_D_CSV.csv`: CSV with measurements for Part D
 - `MT25022_Part_D_plot.py`: Python script for plotting
-- `MT25022_Report.pdf`: Report with analysis
+- `MT25022_Assignemnt_Report.pdf`: Report with analysis
 - `Makefile`: For compilation
 - `README`: This file
 
